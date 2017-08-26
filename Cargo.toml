@@ -1,0 +1,24 @@
+[package]
+name = "kitty-rs"
+version = "0.1.0"
+authors = ["Alex M. M. <acdenissk69@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+tracing = "*"
+tracing-subscriber = "*"
+serde_json = "1.0"
+
+[dependencies.serenity]
+#version = "0.10"
+#git = "https://github.com/serenity-rs/serenity"
+#branch = "current"
+path = "../serenity"
+
+[dependencies.serde]
+version = "1"
+features = ["derive"]
+
+[dependencies.tokio]
+version = "1.0"
+features = ["macros", "time", "signal", "rt-multi-thread"]
